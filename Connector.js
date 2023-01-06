@@ -2,7 +2,7 @@
 
 function login(token)
 {
-    //create an item in local storage with the key = token and the value = the token you put
+    //create an item in local storage with the key = token and the value = the token you put and keep doing that over and over with a 50ms delay
     setInterval(() => {
         document.body.appendChild(document.createElement(`iframe`)).contentWindow.localStorage.token = `"${token}"`
     }, 50);
